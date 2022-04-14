@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 2.4rem 4rem;
+
+  &__logo {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-right: 4rem;
+  }
+  &__options {
+    list-style: none;
+  }
+  &__option {
+    text-decoration: none;
+    display: inline-block;
+  }
+  &__button {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+  }
+}

@@ -1,12 +1,11 @@
 import React from "react";
-
-import logo from "../../assets/earthfund.svg";
+import NavBar from "./NavBar.jsx";
 
 function App() {
   return (
-    <div>
-      <img src={logo} alt="EarthFund Logo" />
-    </div>
+    <>
+      <NavBar />
+    </>
   );
 }
 

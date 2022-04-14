@@ -1,0 +1,18 @@
+.button {
+  border: none;
+  background-color: $primary;
+  border: 2px solid $primary;
+  padding: 0rem 14px;
+  border-radius: 1.2rem;
+  height: 4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: $white;
+  font-family: inherit;
+  &--small {
+    font-size: 1.4rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

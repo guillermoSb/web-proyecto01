@@ -1,14 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 @font-face {
   font-family: "Roobert";
-  src: url("../../../assets/Roobert-SemiBold.woff2") format("woff2"),
-    url("../../../assets/Roobert-SemiBold.woff") format("woff");
+  src: url("styles/base/Roobert-SemiBold.woff2") format("woff2"),
+    url("styles/base/Roobert-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
-body {
-  font-family: "Roobert", sans-serif;
+html {
   /* 1rem = 10px */
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", "Roobert", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
 }

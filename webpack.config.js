@@ -27,6 +27,9 @@ module.exports = {
     },
     plugins: [
         new CleanPlugin(),
-        new HtmlWebpackPlugin({ template: path.join(__dirname, 'src/index.html') }),
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'src/index.html'),
+            favicon: path.join(__dirname, 'assets/earthfund.svg')
+        }),
     ]
 }

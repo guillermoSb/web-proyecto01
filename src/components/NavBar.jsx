@@ -18,6 +18,16 @@ function NavBar() {
       </a>
       <ul className="navbar__options">
         <li className="navbar__option">
+          <div className="dropdown">
+            <a href="#" className="link dropdown__header">
+              Apps
+              <svg width="20" height="20" viewBox="0 0 24 24">
+                <path d="M6.293 8.793a1 1 0 0 1 1.32-.083l.094.083L12 13.085l4.293-4.292a1 1 0 0 1 1.32-.083l.094.083a1 1 0 0 1 .083 1.32l-.083.094-5 5a1 1 0 0 1-1.32.083l-.094-.083-5-5a1 1 0 0 1 0-1.414z"></path>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li className="navbar__option">
           <a href="#" className="link">
             Causes
           </a>

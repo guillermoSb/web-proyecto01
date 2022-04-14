@@ -2,15 +2,18 @@
   border: none;
   background-color: $primary;
   border: 2px solid $primary;
-  padding: 0rem 14px;
+  padding: 0rem 2.2rem;
   border-radius: 1.2rem;
-  height: 4rem;
   color: $white;
   font-family: inherit;
   line-height: 2.4rem;
-  font-weight: 700;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  height: 5.6rem;
   &--small {
     font-size: 1.4rem;
+    padding: 0rem 1.4rem;
+    height: 4rem;
   }
   &:hover {
     cursor: pointer;

@@ -14,13 +14,8 @@ html {
 }
 
 body {
-  font-family: "Inter", "Roobert", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.4rem;
-}
-
-h1 {
-  font-size: 5rem;
-  font-weight: 400;
 }
 
 .link {
@@ -31,4 +26,24 @@ h1 {
   &:hover {
     color: $dark-blue;
   }
+}
+
+.heading-1 {
+  font-family: "Roobert", sans-serif;
+  font-size: 8rem;
+  line-height: 8rem;
+  color: $dark-blue;
+  font-weight: bold;
+  letter-spacing: -0.2rem;
+}
+
+.text {
+  line-height: 3.2rem;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: $dark-blue-2;
+  letter-spacing: -0.02rem;
+  font-weight: lighter;
 }

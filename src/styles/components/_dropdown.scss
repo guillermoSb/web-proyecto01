@@ -1,0 +1,18 @@
+.dropdown {
+  &__header {
+    display: flex;
+    align-items: center;
+    fill: $dark-grey;
+    svg {
+      transition: fill 0.2s, transform 0.2s;
+      margin-left: 4px;
+      fill: inherit;
+    }
+    &:hover {
+      fill: $dark-blue;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

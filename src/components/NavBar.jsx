@@ -18,38 +18,33 @@ function NavBar() {
       </a>
       <ul className="navbar__options">
         <li className="navbar__option">
-          <a href="#" className="navbar__link">
-            Apps
-          </a>
-        </li>
-        <li className="navbar__option">
-          <a href="#" className="navbar__link">
+          <a href="#" className="link">
             Causes
           </a>
         </li>
         <li className="navbar__option">
-          <a href="#" className="navbar__link">
+          <a href="#" className="link">
             DAO
           </a>
         </li>
         <li className="navbar__option">
-          <a href="#" className="navbar__link">
+          <a href="#" className="link">
             Technology
           </a>
         </li>
         <li className="navbar__option">
-          <a href="#" className="navbar__link">
+          <a href="#" className="link">
             Token
           </a>
         </li>
         <li className="navbar__option">
-          <a href="#" className="navbar__link">
+          <a href="#" className="link">
             Contributors
           </a>
         </li>
       </ul>
       <div className="navbar__button">
-        <button className="button">Buy 1Earth token</button>
+        <button className="button button--small">Buy 1Earth token</button>
       </div>
     </nav>
   );

@@ -11,10 +11,27 @@
   }
   &__options {
     list-style: none;
+    position: relative;
+    padding-left: 3rem;
+    &::before {
+      content: "";
+      background: $light-grey;
+      width: 2px;
+      border-radius: 4px;
+      top: 0.5px;
+      bottom: 0.5px;
+      left: 0px;
+      position: absolute;
+    }
   }
   &__option {
     text-decoration: none;
     display: inline-block;
+    padding: 2px 1rem;
+    border: 2px solid transparent;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
   &__button {
     flex: 1;

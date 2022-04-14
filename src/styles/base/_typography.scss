@@ -15,9 +15,20 @@ html {
 
 body {
   font-family: "Inter", "Roobert", sans-serif;
+  font-size: 1.4rem;
 }
 
 h1 {
   font-size: 5rem;
   font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+  color: $dark-grey;
+  font-weight: 600;
+
+  &:hover {
+    color: $dark-blue;
+  }
 }

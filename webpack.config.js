@@ -14,7 +14,11 @@ module.exports = {
                 use: {
                     loader: 'babel-loader'  // Use babel with webpack
                 }
-            }
+            },
+            {
+                test: /\.s?css$/i,
+                use: ["style-loader", "css-loader", "sass-loader"],
+            },
         ]
     },
     plugins: [

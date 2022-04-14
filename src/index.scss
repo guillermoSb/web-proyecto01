@@ -5,3 +5,16 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: "Roobert";
+  src: url("../assets/Roobert-SemiBold.woff2") format("woff2"),
+    url("../assets/Roobert-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Roobert";
+}

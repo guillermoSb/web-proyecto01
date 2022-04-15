@@ -2,6 +2,7 @@
   height: 123.8rem;
   position: relative;
   margin-top: 8.8rem;
+  margin-bottom: -40rem;
   padding-top: 12rem;
   overflow: hidden;
   &__background {
@@ -17,6 +18,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
   }
   &__reflection {
@@ -24,6 +26,7 @@
     bottom: 0;
     width: 100%;
     height: 39rem;
+    z-index: -2;
   }
 
   &__title {
@@ -34,6 +37,7 @@
 
     .heading-1 {
       margin-bottom: 2rem;
+      line-height: 8rem;
     }
     .text {
       margin-bottom: 4rem;

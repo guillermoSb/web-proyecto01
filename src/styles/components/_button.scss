@@ -3,7 +3,7 @@
   border: 2px solid $primary;
   padding: 0rem 2.2rem;
   border-radius: 1.2rem;
-  color: $white;
+  color: $white-2;
   font-family: inherit;
   line-height: 2.4rem;
   font-weight: bolder;
@@ -25,16 +25,16 @@
     border-color: $primary-dark;
   }
   &--light {
-    background-color: $white;
+    background-color: $white-2;
     color: $dark-blue;
     fill: $dark-blue;
-    border: 2px solid $white;
+    border: 2px solid $white-2;
     &:hover {
       color: $primary;
       fill: $primary;
       background-color: #fff;
       background: #fff;
-      border: 2px solid $white;
+      border: 2px solid $white-2;
     }
   }
   &--video {
@@ -49,8 +49,8 @@
       border-radius: 1.2rem;
       width: 100%;
       height: 100%;
-      border: 2px solid $white;
-      background-color: $white;
+      border: 2px solid $white-2;
+      background-color: $white-2;
       box-shadow: 0 10px 100px 2.5px $dark-grey;
       transition: 0.2s transform;
       z-index: -1;
@@ -60,7 +60,7 @@
       background-color: transparent;
       border: none;
       &::before {
-        border: 2px solid $white;
+        border: 2px solid $white-2;
         transform: scale(0.97);
       }
     }

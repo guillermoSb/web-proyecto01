@@ -1,8 +1,10 @@
 .voice-section {
-  //   border: 2px solid red;
   padding-top: 11rem;
   position: relative;
   margin-bottom: 1000px;
+  .container {
+    position: relative;
+  }
   .heading-2 {
     margin: 0px auto 6.4rem;
     text-align: center;
@@ -47,5 +49,86 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+  }
+
+  &__dot {
+    position: absolute;
+    border-radius: 100%;
+    &--1 {
+      width: 24px;
+      height: 24px;
+      background: linear-gradient(180deg, #9fd6fd, #b29ffd);
+      top: 32.5%;
+      left: calc(50% - 638px);
+    }
+    &--2 {
+      top: 42.5%;
+      left: calc(50% - 524px);
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(215.69deg, #d2abf1 20.9%, #8c83ea);
+    }
+    &--3 {
+      left: calc(50% - 665px);
+      bottom: 28%;
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(144.31deg, #93d9be, #93c0d9 79.1%);
+    }
+    &--4 {
+      top: 30.5%;
+      right: calc(50% - 661px);
+      width: 16px;
+      height: 16px;
+      background: linear-gradient(215.69deg, #d2abf1 20.9%, #8c83ea);
+    }
+    &--5 {
+      top: 37.5%;
+      right: calc(50% - 550px);
+      width: 24px;
+      height: 24px;
+      background: linear-gradient(144.31deg, #93d9be, #81bada 79.1%);
+    }
+    &--6 {
+      right: calc(50% - 662px);
+      bottom: 38.5%;
+      width: 19px;
+      height: 19px;
+      background: linear-gradient(149.07deg, #ffc075 16.67%, #ff8d69 81.27%);
+    }
+  }
+  &__donations {
+    overflow: hidden;
+  }
+  &__donation {
+    width: 20rem;
+    display: flex;
+    background-color: $white;
+    align-items: center;
+    box-shadow: 0 10px 30px 5px rgba($dark-grey, 0.1);
+    justify-content: center;
+    border-radius: 10rem;
+    position: absolute;
+    img {
+      display: block;
+      width: 100%;
+    }
+    &--1 {
+      bottom: 20%;
+      left: 5%;
+    }
+    &--2 {
+      bottom: 40%;
+      left: -5%;
+    }
+    &--3 {
+      bottom: 40%;
+      right: 5%;
+    }
+    &--4 {
+      right: -5%;
+      bottom: 20%;
+      overflow: hidden;
+    }
   }
 }

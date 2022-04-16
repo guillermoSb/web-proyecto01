@@ -4,6 +4,10 @@ import NavBar from "./NavBar.jsx";
 import Video from "../../assets/video.mp4";
 import Reflection from "../../assets/reflection.webp";
 import VideoCover from "../../assets/video-cover.webp";
+import Image1 from "../../assets/image-1.webp";
+import Image2 from "../../assets/image-2.webp";
+import Image3 from "../../assets/image-3.webp";
+import Image4 from "../../assets/image-4.webp";
 
 function App() {
   return (
@@ -49,6 +53,28 @@ function App() {
             src={VideoCover}
             alt="Cover for the video."
           />
+        </div>
+        <div className="voice-section__dots">
+          <div className="voice-section__dot voice-section__dot--1"></div>
+          <div className="voice-section__dot voice-section__dot--2"></div>
+          <div className="voice-section__dot voice-section__dot--3"></div>
+          <div className="voice-section__dot voice-section__dot--4"></div>
+          <div className="voice-section__dot voice-section__dot--5"></div>
+          <div className="voice-section__dot voice-section__dot--6"></div>
+        </div>
+        <div className="voice-section__donations">
+          <div className="voice-section__donation voice-section__donation--1">
+            <img src={Image1} alt="Donation person" />
+          </div>
+          <div className="voice-section__donation voice-section__donation--2">
+            <img src={Image2} alt="Donation person" />
+          </div>
+          <div className="voice-section__donation voice-section__donation--3">
+            <img src={Image3} alt="Donation person" />
+          </div>
+          <div className="voice-section__donation voice-section__donation--4">
+            <img src={Image4} alt="Donation person" />
+          </div>
         </div>
       </section>
     </>

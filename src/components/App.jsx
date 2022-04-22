@@ -9,6 +9,13 @@ import Image2 from "../../assets/image-2.webp";
 import Image3 from "../../assets/image-3.webp";
 import Image4 from "../../assets/image-4.webp";
 
+import Dif1 from "../../assets/dif-1.webp";
+import Dif2 from "../../assets/dif-2.webp";
+import Dif3 from "../../assets/dif-3.webp";
+import Dif4 from "../../assets/dif-4.webp";
+import Dif5 from "../../assets/dif-5.webp";
+import Dif6 from "../../assets/dif-6.webp";
+
 function App() {
   return (
     <>
@@ -75,6 +82,48 @@ function App() {
           <div className="voice-section__donation voice-section__donation--4">
             <img src={Image4} alt="Donation person" />
           </div>
+        </div>
+      </section>
+      <section className="difference-section container">
+        <h2 className="heading-2">
+          Everything you need to&nbsp;make a difference
+        </h2>
+        <p className="text">
+          Join communities dedicated to causes you’re passionate about,
+          crowdfund your world-changing treasury and vote for which projects get
+          the money they need to make an impact.
+        </p>
+        <div className="difference-section__pictures">
+          <img
+            src={Dif1}
+            className="difference-section__picture difference-section__picture--1"
+            alt="App picture"
+          />
+          <img
+            src={Dif2}
+            className="difference-section__picture difference-section__picture--2"
+            alt="App picture"
+          />
+          <img
+            src={Dif3}
+            className="difference-section__picture difference-section__picture--3"
+            alt="App picture"
+          />
+          <img
+            src={Dif4}
+            className="difference-section__picture difference-section__picture--4"
+            alt="App picture"
+          />
+          <img
+            src={Dif5}
+            className="difference-section__picture difference-section__picture--5"
+            alt="App picture"
+          />
+          <img
+            src={Dif6}
+            className="difference-section__picture difference-section__picture--6"
+            alt="App picture"
+          />
         </div>
       </section>
     </>

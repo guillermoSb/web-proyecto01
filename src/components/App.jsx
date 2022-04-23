@@ -184,6 +184,7 @@ function App() {
             img={Photo3}
           />
         </div>
+        <button className="button container ">Request early access</button>
       </section>
     </>
   );

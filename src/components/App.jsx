@@ -18,6 +18,11 @@ import Dif6 from "../../assets/dif-6.webp";
 
 import Deepak from "../../assets/deepak.webp";
 
+import Photo5 from "../../assets/photo-5.webp";
+import Coint from "../../assets/cointelegraph.svg";
+import Photo3 from "../../assets/photo-3.webp";
+import Card from "./Card.jsx";
+
 function App() {
   return (
     <>
@@ -154,6 +159,30 @@ function App() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="community-section__cards">
+          <Card
+            title={`“EarthFund DAO stood out from the crowd with an impressive team and even
+        more impressive mission: harnessing the power of decentralized
+        autonomous blockchain-powered enterprises to support DAO-selected
+        projects that are poised to affect real change”`}
+            footerTitle="Jon Najarian"
+            footerSubtitle="CNBC anchor and EarthFund DAO advisor"
+            img={Photo5}
+          />
+          <Card
+            title={`“Buy buying the token and joining the EarthFund DAO, anybody in the world will have a vote on how the EarthFund treasury is used to fund planet-saving projects around the world.”`}
+            footerTitle=""
+            footerSubtitle=""
+            img={Coint}
+            variant={2}
+          />
+          <Card
+            title={`“I couldn’t be more confident of the team I’ve joined. As COO of Red Bull, I learned the importance of having a really strong team of top-of-their-game professionals behind you, and Earth Fund is no different. From my first meeting with everyone, I could just tell they were a first-rate team.”`}
+            footerTitle="Gary Smith"
+            footerSubtitle="Former COO of Red Bull and EarthFund advisor"
+            img={Photo3}
+          />
         </div>
       </section>
     </>

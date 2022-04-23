@@ -1,4 +1,5 @@
 .community-section {
+  margin-bottom: 1000px;
   .heading-2 {
     display: block;
     text-align: center;
@@ -8,8 +9,8 @@
 
   &__deepak {
     @include center;
-    width: 129.6rem;
-    height: 53.2rem;
+    max-width: 129.6rem;
+    max-height: 53.2rem;
     border-radius: 3.2rem;
     // outline: 2px solid red;
     padding: 8rem 9.8rem;
@@ -26,5 +27,14 @@
     height: 35.6rem;
     margin-right: 8.2rem;
     background-color: $grey;
+  }
+
+  &__cards {
+    @include center;
+    max-width: 132rem;
+    padding: 2.4rem 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
   }
 }

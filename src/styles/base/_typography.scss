@@ -29,7 +29,9 @@ body {
 }
 
 .heading-1,
-.heading-2 {
+.heading-2,
+.heading-3,
+.heading-4 {
   font-family: "Roobert", sans-serif;
   line-height: 6.4rem;
   color: $dark-blue;
@@ -46,10 +48,30 @@ body {
   color: $dark-blue;
 }
 
+.heading-3 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 600;
+}
+
+.heading-4 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+}
+
 .text {
   line-height: 3.2rem;
   font-size: 2rem;
   color: $dark-blue-2;
   letter-spacing: -0.02rem;
   font-weight: lighter;
+  &--grey {
+    color: $dark-grey;
+  }
+  &--small {
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
 }

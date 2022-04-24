@@ -1,0 +1,38 @@
+.rewards-section {
+  position: relative;
+  margin-bottom: 19.2rem;
+  &__header {
+    @include center;
+  }
+  .heading-2 {
+    @include center;
+    width: 74rem;
+    text-align: center;
+    display: block;
+    padding-top: 7.5rem;
+    margin-bottom: 3.2rem;
+  }
+  .text {
+    @include center;
+    width: 77rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    color: $dark-grey;
+    margin-bottom: 9.8rem;
+  }
+  &__pattern {
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    width: 94.3rm;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  &__cards {
+    @include center;
+    max-width: 118.4rem;
+    justify-content: space-between;
+  }
+}

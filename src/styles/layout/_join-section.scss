@@ -1,0 +1,72 @@
+.join-section {
+  @include center;
+  max-width: 127.6rem;
+  margin-bottom: 1000px;
+  &__banner {
+    // justify-content: space-between;
+    align-items: center;
+    border-radius: 2.4rem;
+    padding: 8rem;
+    background: linear-gradient(90deg, $primary 11%, $primary-dark-2 78%);
+    gap: 10rem;
+
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 1.4rem;
+      background: linear-gradient(
+        63deg,
+        rgba($gradient-green, 0.2) 10%,
+        rgba($gradient-blue, 0.3) 100%
+      );
+      transform: translateY(1.2rem) scaleX(0.96);
+    }
+  }
+  &__title {
+    width: fit-content;
+    width: 52rem;
+  }
+  &__text {
+    color: $white-2;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+    gap: 3.2rem;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius: 100%;
+    background-color: $dark-blue;
+    transition: background-color 0.2s;
+    z-index: 1;
+    &:hover {
+      cursor: pointer;
+      background-color: $dark-blue-2;
+    }
+    svg {
+      fill: $white-2;
+    }
+  }
+  &__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 64.7rem;
+    z-index: 0;
+  }
+}

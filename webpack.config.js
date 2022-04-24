@@ -13,6 +13,10 @@ module.exports = {
                 use: ["style-loader", "css-loader", "sass-loader"],
             },
             {
+                test: /\.sass$/i,
+                use: ["style-loader", "css-loader", "sass-loader"],
+            },
+            {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {

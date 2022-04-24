@@ -34,5 +34,61 @@
     @include center;
     max-width: 118.4rem;
     justify-content: space-between;
+    position: relative;
+  }
+  &__avatar {
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+    &--1 {
+      top: 9rem;
+      left: -8rem;
+      width: 40px;
+    }
+    &--2 {
+      width: 3.2rem;
+      left: 30rem;
+      top: 6rem;
+    }
+    &--3 {
+      width: 3.2rem;
+      left: 35rem;
+      bottom: 10rem;
+    }
+    &--4 {
+      width: 3.2rem;
+      bottom: 11rem;
+      right: 36rem;
+    }
+    &--5 {
+      width: 4rem;
+      bottom: -2rem;
+      right: 8rem;
+    }
+    &--6 {
+      width: 3.2rem;
+      right: -10rem;
+      top: 10rem;
+    }
+  }
+  &__prop {
+    position: absolute;
+    z-index: 1;
+    &--1 {
+      bottom: 12rem;
+      left: 25rem;
+    }
+    &--2 {
+      right: 28rem;
+      top: 10rem;
+    }
+    &--3 {
+      top: 16rem;
+      left: 28rem;
+    }
+    &--4 {
+      right: -6rem;
+      bottom: 5.5rem;
+    }
   }
 }

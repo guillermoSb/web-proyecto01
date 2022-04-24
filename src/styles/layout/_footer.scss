@@ -1,0 +1,54 @@
+.footer {
+  @include center;
+  margin-bottom: 2.4rem;
+  max-width: 127.6rem;
+  .navbar {
+    position: relative;
+    padding: 0;
+    margin-bottom: 5.6rem;
+    z-index: 0;
+  }
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.1rem;
+    border-top: 1px solid $light-grey;
+    margin-top: 6.8rem;
+  }
+
+  &__options {
+    .link {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      font-weight: 500;
+    }
+    .link:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+  }
+  &__1earth {
+    position: relative;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+  &__reserved {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    &::before {
+      content: "aaa";
+      background: $light-grey;
+      color: transparent;
+      position: absolute;
+      width: 2px;
+      border-radius: 4px;
+      top: 0px;
+      left: 0px;
+      bottom: 0;
+    }
+  }
+}

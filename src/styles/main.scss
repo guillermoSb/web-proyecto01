@@ -1,6 +1,6 @@
+@import "~animate.css/animate.css";
 @import "abstracts/variables.scss";
 @import "abstracts/mixins.scss";
-
 @import "base/reset.scss";
 @import "base/typography.scss";
 @import "base/utils.scss";
@@ -12,6 +12,7 @@
 @import "layout/community-section.scss";
 @import "layout/rewards-section.scss";
 @import "layout/join-section.scss";
+@import "layout/footer.scss";
 
 @import "components/button.scss";
 @import "components/dropdown.scss";

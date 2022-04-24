@@ -12,6 +12,6 @@
 - ✅ everything you need to make a difference
 - ✅ a community where you have a real, meaningful voice
 - get rewarded for being part of the solution
-- join the community
-- footer
+- ✅ join the community
+- ✅ footer
 - FIX SHADOW APPEARING BEHIND

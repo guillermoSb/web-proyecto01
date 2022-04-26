@@ -77,6 +77,7 @@ function App() {
   const fadeInFastItems = [useRef(null), useRef(null), useRef(null)];
   // Persons References
   useEffect(() => {
+    window.scrollTo(0, -500);
     const parallax = () => {
       parallaxItems.forEach((item) => {
         const y = window.innerHeight - item.current.getBoundingClientRect().top;
@@ -122,7 +123,13 @@ function App() {
         <NavBar />
         <div className="hero">
           <div className="hero__background">
-            <video autoPlay={true} loop={true} className="hero__video">
+            <video
+              autoPlay={true}
+              muted={true}
+              loop={true}
+              controls={false}
+              className="hero__video"
+            >
               <source src={Video} type="video/mp4" />
             </video>
             <img

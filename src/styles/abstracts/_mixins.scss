@@ -3,3 +3,39 @@
 @mixin center {
   margin: 0px auto;
 }
+
+/*
+$breakpoints posibles:
+- phone-sm
+- phone
+- tablet-portrait
+- tablet-landscape
+- big
+*/
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone-sm {
+    @media (max-width: 460px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-portrait {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-landscape {
+    @media (max-width: 1260px) {
+      @content;
+    }
+  }
+  @if $breakpoint == big {
+    @media (max-width: 1800px) {
+      @content;
+    }
+  }
+}

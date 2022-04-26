@@ -3,6 +3,11 @@
   width: 32rem;
   height: fit-content;
   padding: 4rem;
+
+  @include responsive(tablet-landscape) {
+    max-width: 30.6rem;
+  }
+
   &__icon {
     width: 4rem;
     height: 4rem;
@@ -33,5 +38,10 @@
   }
   &--3 {
     background-color: $bg-card3;
+  }
+  @include responsive(tablet-portrait) {
+    width: 100%;
+    max-width: 100%;
+    transform: translateY(0);
   }
 }

@@ -56,6 +56,7 @@ function NavBar() {
       <div className="navbar__button">
         <button className="button button--small">Buy 1Earth token</button>
       </div>
+      <button className="navbar__menu"></button>
     </nav>
   );
 }

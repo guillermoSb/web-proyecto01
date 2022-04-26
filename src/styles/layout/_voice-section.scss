@@ -2,6 +2,12 @@
   padding-top: 11rem;
   position: relative;
   margin-bottom: 14rem;
+  width: 100%;
+
+  @include responsive(tablet-landscape) {
+    margin-top: 6rem;
+    margin-bottom: 10.9rem;
+  }
   .container {
     position: relative;
   }
@@ -10,12 +16,24 @@
     text-align: center;
     max-width: 700px;
     display: block;
+    @include responsive(tablet-landscape) {
+      margin: 0px auto 4.8rem;
+    }
+    @include responsive(phone) {
+      text-align: left;
+    }
   }
   &__video {
     display: block;
     margin: 0px auto;
-    max-width: 900px;
+    max-width: 90rem;
     position: relative;
+    @include responsive(tablet-landscape) {
+      max-width: 64rem;
+    }
+    @include responsive(phone) {
+      max-width: 73.5rem;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -26,6 +44,8 @@
       border-radius: 2.4rem;
       border: 2px solid $light-grey;
       transform: translateY(2rem) scale(0.975);
+      @include responsive(tablet-landscape) {
+      }
     }
     &::after {
       content: "";
@@ -59,7 +79,10 @@
       height: 24px;
       background: linear-gradient(180deg, #9fd6fd, #b29ffd);
       top: 32.5%;
-      left: calc(50% - 638px);
+      left: calc(50% - 63.8rem);
+      @include responsive(tablet-portrait) {
+        left: 2rem;
+      }
     }
     &--2 {
       top: 42.5%;
@@ -67,6 +90,9 @@
       width: 12px;
       height: 12px;
       background: linear-gradient(215.69deg, #d2abf1 20.9%, #8c83ea);
+      @include responsive(tablet-portrait) {
+        left: 5rem;
+      }
     }
     &--3 {
       left: calc(50% - 665px);
@@ -74,6 +100,9 @@
       width: 20px;
       height: 20px;
       background: linear-gradient(144.31deg, #93d9be, #93c0d9 79.1%);
+      @include responsive(tablet-portrait) {
+        left: 5rem;
+      }
     }
     &--4 {
       top: 30.5%;
@@ -81,6 +110,9 @@
       width: 16px;
       height: 16px;
       background: linear-gradient(215.69deg, #d2abf1 20.9%, #8c83ea);
+      @include responsive(tablet-landscape) {
+        right: 10rem;
+      }
     }
     &--5 {
       top: 37.5%;
@@ -88,6 +120,9 @@
       width: 24px;
       height: 24px;
       background: linear-gradient(144.31deg, #93d9be, #81bada 79.1%);
+      @include responsive(tablet-landscape) {
+        right: 2rem;
+      }
     }
     &--6 {
       right: calc(50% - 662px);
@@ -95,10 +130,13 @@
       width: 19px;
       height: 19px;
       background: linear-gradient(149.07deg, #ffc075 16.67%, #ff8d69 81.27%);
+      @include responsive(tablet-landscape) {
+        right: 5rem;
+      }
     }
   }
   &__donations {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   &__donation {
     width: 20rem;
@@ -109,6 +147,9 @@
     justify-content: center;
     border-radius: 10rem;
     position: absolute;
+    @include responsive(phone) {
+      width: 10rem;
+    }
     img {
       display: block;
       width: 100%;
@@ -116,19 +157,32 @@
     &--1 {
       bottom: 20%;
       left: 5%;
+      @include responsive(tablet-landscape) {
+        left: 10%;
+      }
     }
     &--2 {
       bottom: 40%;
       left: -5%;
+      @include responsive(tablet-landscape) {
+        left: 1%;
+      }
     }
     &--3 {
       bottom: 40%;
       right: 5%;
+      @include responsive(tablet-landscape) {
+        bottom: 50%;
+        right: 8%;
+      }
     }
     &--4 {
       right: -5%;
       bottom: 20%;
       overflow: hidden;
+      @include responsive(tablet-landscape) {
+        right: 0;
+      }
     }
   }
 }

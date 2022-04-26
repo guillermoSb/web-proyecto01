@@ -1,10 +1,22 @@
 .community-section {
   margin-bottom: 11.2rem;
+
+  @include responsive(tablet-landscape) {
+    margin-bottom: 0rem;
+  }
+  @include responsive(tablet-portrait) {
+    margin-bottom: -1rem;
+  }
   .heading-2 {
     display: block;
     text-align: center;
     max-width: 80rem;
     margin: 0px auto 6.4rem;
+    @include responsive(phone) {
+      text-align: left;
+      max-width: 25rem;
+      margin-left: 2rem;
+    }
   }
 
   &__deepak {
@@ -12,12 +24,37 @@
     max-width: 129.6rem;
     max-height: 53.2rem;
     border-radius: 3.2rem;
-    // outline: 2px solid red;
+
     padding: 8rem 9.8rem;
     box-shadow: 0 100px 90px 1px rgba($dark-grey, 0.1);
+
     .heading-3 {
       margin-bottom: 3.2rem;
       max-width: 66.4rem;
+      @include responsive(tablet-landscape) {
+        max-width: 65.4rem;
+      }
+    }
+    @include responsive(tablet-landscape) {
+      max-width: 108.6rem;
+      max-height: 36.8rem;
+      padding: 6.4rem 7rem;
+    }
+    @include responsive(tablet-portrait) {
+      max-width: 93.8rem;
+      margin: 0rem 3rem;
+      max-height: 100%;
+    }
+    @include responsive(phone) {
+      padding: 8rem 2rem;
+    }
+  }
+
+  &__deepak-card {
+    @include responsive(phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -27,14 +64,34 @@
     height: 35.6rem;
     margin-right: 8.2rem;
     background-color: $grey;
+    @include responsive(tablet-landscape) {
+      max-width: 23.6rem;
+      max-height: 23.6rem;
+    }
+    @include responsive(phone) {
+      margin-right: 0rem;
+      margin-bottom: 4.2rem;
+    }
   }
 
   &__cards {
     @include center;
     max-width: 132rem;
-    padding: 2.4rem 1.2rem 6.4rem;
+    padding: 2.4rem 3rem 6.4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.4rem;
+    @include responsive(tablet-portrait) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include responsive(phone) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .button {
+    @include responsive(phone) {
+      display: none;
+    }
   }
 }

@@ -18,6 +18,9 @@
     font-size: 1.4rem;
     padding: 0rem 1.4rem;
     height: 4rem;
+    @include responsive(tablet-portrait) {
+      font-size: 1rem;
+    }
   }
   &:hover {
     cursor: pointer;
@@ -43,6 +46,15 @@
     padding: 0 26px;
     height: 6.4rem;
     border: none;
+    @include responsive(tablet-landscape) {
+      // left: 10%;
+      height: 5.6rem;
+    }
+    @include responsive(phone) {
+      height: 4.6rem;
+      font-size: 1rem;
+      width: 20rem;
+    }
     &::before {
       content: "";
       position: absolute;

@@ -297,10 +297,10 @@ function App() {
             <div className="community-section__deepak-info">
               <h3 className="heading-3">
                 “I believe that each of us is a unique strand in the intricate
-                web of life and here to make a contribution. That's why we chose
-                to collaborate with EarthFund, a platform that gives everyone
-                the ability to participate and have a voice in making a more
-                sustainable, peaceful, healthier and joyful world.”
+                web of life and here to make a contribution. That&apos;s why we
+                chose to collaborate with EarthFund, a platform that gives
+                everyone the ability to participate and have a voice in making a
+                more sustainable, peaceful, healthier and joyful world.”
               </h3>
               <h4 className="heading-4">Deepak Chopra</h4>
               <p className="text text--grey text--small">
@@ -321,14 +321,18 @@ function App() {
             img={Photo5}
           />
           <Card
-            title={`“Buy buying the token and joining the EarthFund DAO, anybody in the world will have a vote on how the EarthFund treasury is used to fund planet-saving projects around the world.”`}
+            title={
+              "“Buy buying the token and joining the EarthFund DAO, anybody in the world will have a vote on how the EarthFund treasury is used to fund planet-saving projects around the world.”"
+            }
             footerTitle=""
             footerSubtitle=""
             img={Coint}
             variant={2}
           />
           <Card
-            title={`“I couldn’t be more confident of the team I’ve joined. As COO of Red Bull, I learned the importance of having a really strong team of top-of-their-game professionals behind you, and Earth Fund is no different. From my first meeting with everyone, I could just tell they were a first-rate team.”`}
+            title={
+              "“I couldn’t be more confident of the team I’ve joined. As COO of Red Bull, I learned the importance of having a really strong team of top-of-their-game professionals behind you, and Earth Fund is no different. From my first meeting with everyone, I could just tell they were a first-rate team.”"
+            }
             footerTitle="Gary Smith"
             footerSubtitle="Former COO of Red Bull and EarthFund advisor"
             img={Photo3}

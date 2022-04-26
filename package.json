@@ -12,6 +12,8 @@
   "private": true,
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-react": "^7.29.4",
     "file-loader": "^6.2.0",
     "sass-loader": "^12.6.0",
     "webpack": "^5.72.0",
@@ -29,6 +31,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "sass": "^1.50.0",

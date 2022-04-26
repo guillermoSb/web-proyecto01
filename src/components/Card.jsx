@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Card({ title, footerTitle, footerSubtitle, img, variant = 1 }) {
   return (
@@ -21,5 +22,12 @@ function Card({ title, footerTitle, footerSubtitle, img, variant = 1 }) {
     </div>
   );
 }
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  footerTitle: PropTypes.string.isRequired,
+  footerSubtitle: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  variant: PropTypes.number,
+};
 
 export default Card;

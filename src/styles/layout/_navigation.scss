@@ -7,6 +7,7 @@
   align-items: center;
   z-index: 100;
   background-color: $white;
+  border-bottom: 2px solid $light-grey;
 
   @include responsive(tablet-landscape) {
     padding: 2rem 2rem;
@@ -68,9 +69,13 @@
     border: none;
     background-color: transparent;
     display: none;
+    // opacity: 0;
+    width: 0;
+    height: 0;
 
     @include responsive(tablet-portrait) {
       display: block;
+      margin: 0.5rem 2.4rem;
     }
     &::before {
       content: "";
@@ -81,6 +86,7 @@
       border-radius: 10px;
       background-color: $dark-blue;
       transform: translateY(5px);
+      transition: transform 0.2s;
     }
     &::after {
       content: "";
@@ -91,6 +97,68 @@
       border-radius: 10px;
       background-color: $dark-blue;
       transform: translateY(-5px);
+      transition: transform 0.2s;
+    }
+
+    &:checked {
+      &::before {
+        transform: translateY(0px) rotate(45deg);
+      }
+      &::after {
+        transform: translateY(-2px) rotate(-45deg);
+      }
+    }
+
+    @include responsive(tablet-portrait) {
+      &:checked ~ &-full {
+        display: block;
+      }
+    }
+  }
+
+  &__menu-full {
+    background-color: $white;
+    height: calc(100vh - 8.2rem);
+    width: 100vw;
+    left: 0;
+    top: 8.2rem;
+    position: fixed;
+    display: none;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    ul {
+      list-style: none;
+    }
+    .navbar__apps-menu {
+      border-bottom: 1px solid $light-grey;
+    }
+    .navbar__apps-list {
+      margin-left: 2rem;
+      padding: 2rem 0;
+      > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .navbar__responsive-options {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0;
+      > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+    .navbar__social-links {
+      display: flex;
+      gap: 2rem;
+      fill: $grey-2;
+    }
+    .navbar__responsive-links {
+      padding: 2rem 0;
+      > *:first-child {
+        margin-bottom: 2rem;
+      }
     }
   }
 }

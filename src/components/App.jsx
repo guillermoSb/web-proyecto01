@@ -38,6 +38,7 @@ import Avatar5 from "../../assets/avatar-5.webp";
 import Avatar6 from "../../assets/avatar-6.webp";
 
 import Lines from "../../assets/lines.svg";
+import Line from "../../assets/line.svg";
 import Line2 from "../../assets/line-2.svg";
 import Line3 from "../../assets/line-3.svg";
 import Confetti from "../../assets/confetti.svg";
@@ -286,7 +287,7 @@ function App() {
           “A community where you&nbsp;have a real, meaningful voice”
         </h2>
         <div className="community-section__deepak flex">
-          <div className="flex align-center ">
+          <div className="flex align-center community-section__deepak-card">
             <img
               src={Deepak}
               alt="Deepak Chopra"
@@ -407,6 +408,17 @@ function App() {
             src={Confetti}
             alt="Confetti"
             className="rewards-section__prop rewards-section__prop--4"
+          />
+
+          <img
+            src={Line}
+            alt="Line"
+            className="rewards-section__prop rewards-section__prop--5"
+          />
+          <img
+            src={Line}
+            alt="Line"
+            className="rewards-section__prop rewards-section__prop--6"
           />
           <RewardCard
             icon={Chip}

@@ -9,6 +9,10 @@
     max-width: 100%;
     padding: 0rem 5rem;
   }
+  @include responsive(phone) {
+    max-width: 100%;
+    padding: 0rem 2rem;
+  }
   &__banner {
     // justify-content: space-between;
     align-items: center;
@@ -25,6 +29,10 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 3rem;
+    }
+    @include responsive(phone) {
+      padding: 3.2rem 2.2rem;
+      gap: 2rem;
     }
 
     position: relative;
@@ -51,6 +59,10 @@
     @include responsive(tablet-landscape) {
       font-size: 4rem;
     }
+    @include responsive(phone) {
+      text-align: left;
+      width: 100%;
+    }
   }
   &__text {
     color: $white-2;
@@ -62,12 +74,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 3.2rem;
-    gap: 3.2rem;
+    // gap: 3.2rem;
     @include responsive(tablet-landscape) {
       max-width: 39rem;
     }
     @include responsive(tablet-portrait) {
       margin-bottom: 2rem;
+    }
+    @include responsive(phone) {
+      width: 100%;
     }
   }
   &__link {
@@ -94,6 +109,10 @@
         max-width: 2rem;
         max-height: 2rem;
       }
+      @include responsive(phone) {
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+      }
     }
   }
   &__bg {
@@ -102,5 +121,14 @@
     bottom: 0;
     width: 64.7rem;
     z-index: 0;
+  }
+
+  &__buttons {
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2rem;
+      align-items: center;
+    }
   }
 }

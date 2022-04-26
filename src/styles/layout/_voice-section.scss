@@ -19,6 +19,9 @@
     @include responsive(tablet-landscape) {
       margin: 0px auto 4.8rem;
     }
+    @include responsive(phone) {
+      text-align: left;
+    }
   }
   &__video {
     display: block;
@@ -27,6 +30,9 @@
     position: relative;
     @include responsive(tablet-landscape) {
       max-width: 64rem;
+    }
+    @include responsive(phone) {
+      max-width: 73.5rem;
     }
     &::before {
       content: "";
@@ -141,6 +147,9 @@
     justify-content: center;
     border-radius: 10rem;
     position: absolute;
+    @include responsive(phone) {
+      width: 10rem;
+    }
     img {
       display: block;
       width: 100%;

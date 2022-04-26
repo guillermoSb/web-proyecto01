@@ -6,14 +6,20 @@
 
 /*
 $breakpoints posibles:
+- phone-sm
 - phone
 - tablet-portrait
 - tablet-landscape
 - big
 */
 @mixin responsive($breakpoint) {
+  @if $breakpoint == phone-sm {
+    @media (max-width: 460px) {
+      @content;
+    }
+  }
   @if $breakpoint == phone {
-    @media (max-width: 600px) {
+    @media (max-width: 767px) {
       @content;
     }
   }

@@ -5,6 +5,9 @@
   @include responsive(tablet-landscape) {
     padding: 0 2rem;
   }
+  @include responsive(phone-sm) {
+    padding: 0 1rem;
+  }
 }
 
 .flex {

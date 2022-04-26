@@ -1,6 +1,9 @@
 .rewards-section {
   position: relative;
   margin-bottom: 19.2rem;
+  @include responsive(phone) {
+    margin-bottom: 8rem;
+  }
 
   &__header {
     @include center;
@@ -15,6 +18,11 @@
     @include responsive(tablet-portrait) {
       margin-top: 4rem;
     }
+    @include responsive(phone) {
+      text-align: left;
+      width: auto;
+      padding: 0 5.6rem;
+    }
   }
   .text {
     @include center;
@@ -25,6 +33,11 @@
     line-height: 2.8rem;
     color: $dark-grey;
     margin-bottom: 9.8rem;
+    @include responsive(phone) {
+      text-align: left;
+      width: auto;
+      padding: 0 2rem;
+    }
   }
   &__pattern {
     position: absolute;
@@ -36,12 +49,18 @@
     @include responsive(tablet-portrait) {
       width: 70rem;
     }
+    @include responsive(phone) {
+      width: 100%;
+    }
   }
   &__cards {
     @include center;
     max-width: 118.4rem;
     justify-content: space-between;
     position: relative;
+    > *:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
     @include responsive(tablet-landscape) {
       max-width: 115rem;
       padding: 0rem 5rem;
@@ -50,8 +69,9 @@
       flex-direction: column;
       width: 100%;
     }
-    > *:not(:last-child) {
-      margin-bottom: 3.2rem;
+    @include responsive(phone) {
+      max-width: 100%;
+      padding: 0rem 2rem;
     }
   }
   &__avatar {
@@ -105,6 +125,9 @@
         right: 5rem;
         bottom: 5rem;
       }
+      @include responsive(phone) {
+        display: none;
+      }
     }
     &--6 {
       width: 3.24rem;
@@ -118,6 +141,9 @@
         top: auto;
         bottom: 1rem;
       }
+      @include responsive(phone) {
+        display: none;
+      }
     }
   }
   &__prop {
@@ -128,6 +154,12 @@
       left: 25rem;
       @include responsive(tablet-landscape) {
         left: 34rem;
+      }
+      @include responsive(tablet-portrait) {
+        visibility: hidden;
+      }
+      @include responsive(phone) {
+        display: none;
       }
     }
     &--2 {
@@ -158,9 +190,34 @@
       @include responsive(tablet-landscape) {
         right: 0rem;
       }
+      @include responsive(tablet-portrait) {
+        display: none;
+      }
+      @include responsive(phone) {
+        display: block;
+        right: auto;
+        left: 0%;
+        bottom: 0;
+        max-width: 100%;
+      }
     }
-    @include responsive(tablet-portrait) {
-      visibility: hidden;
+
+    &--5 {
+      display: none;
+      @include responsive(tablet-portrait) {
+        display: block;
+        top: 30%;
+        left: 8%;
+        height: 6rem;
+      }
+    }
+    &--6 {
+      display: none;
+      @include responsive(tablet-portrait) {
+        display: block;
+        top: 63%;
+        left: 8%;
+      }
     }
   }
 }

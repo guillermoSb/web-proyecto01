@@ -11,6 +11,9 @@
     @include responsive(tablet-landscape) {
       max-width: 59rem;
     }
+    @include responsive(phone) {
+      text-align: left;
+    }
   }
   .text {
     max-width: 77rem;
@@ -20,6 +23,9 @@
     color: $dark-grey;
     @include responsive(tablet-landscape) {
       max-width: 70rem;
+    }
+    @include responsive(phone) {
+      text-align: left;
     }
   }
   &__pictures {
@@ -34,10 +40,17 @@
     );
     border-radius: 1.5rem;
     z-index: -2;
+    @include responsive(phone) {
+      margin-left: -20rem;
+    }
+    @include responsive(phone-sm) {
+      margin-left: -45rem;
+    }
   }
   &__picture {
     position: absolute;
     border-radius: 1.5rem;
+
     &--1 {
       top: 4rem;
       left: 50%;
@@ -71,6 +84,9 @@
         height: 16.2rem;
         right: -5rem;
         top: 8rem;
+      }
+      @include responsive(phone) {
+        display: none;
       }
     }
     &--3 {
@@ -110,6 +126,9 @@
         right: -4%;
         top: 4rem;
       }
+      @include responsive(phone) {
+        display: none;
+      }
     }
     &--5 {
       width: 37.4rem;
@@ -130,6 +149,9 @@
         top: 30rem;
         left: -5rem;
       }
+      @include responsive(phone) {
+        display: none;
+      }
     }
     &--6 {
       width: 36.4rem;
@@ -148,6 +170,9 @@
         height: 10.4rem;
         left: -1rem;
         bottom: -2rem;
+      }
+      @include responsive(phone) {
+        display: none;
       }
     }
   }

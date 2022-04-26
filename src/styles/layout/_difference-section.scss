@@ -31,8 +31,8 @@
   &__pictures {
     @include center;
     position: relative;
-    max-width: 70.4rem;
-    height: 48.7rem;
+    max-width: 98rem;
+    height: 64rem;
     background: linear-gradient(
       63deg,
       rgba($gradient-blue, 0.3) 5%,
@@ -40,6 +40,10 @@
     );
     border-radius: 1.5rem;
     z-index: -2;
+    @include responsive(tablet-landscape) {
+      max-width: 70.4rem;
+      height: 48.7rem;
+    }
     @include responsive(phone) {
       margin-left: -20rem;
     }

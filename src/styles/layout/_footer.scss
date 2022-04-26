@@ -2,11 +2,47 @@
   @include center;
   margin-bottom: 2.4rem;
   max-width: 127.6rem;
+  @include responsive(tablet-landscape) {
+    max-width: 107rem;
+  }
+  @include responsive(tablet-portrait) {
+    max-width: 100%;
+    padding: 0rem 5rem;
+  }
   .navbar {
     position: relative;
     padding: 0;
     margin-bottom: 5.6rem;
     z-index: 0;
+    position: relative;
+    @include responsive(tablet-portrait) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__options {
+      @include responsive(tablet-portrait) {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 0rem;
+        > *:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__button {
+      @include responsive(tablet-portrait) {
+        position: absolute;
+        right: 0;
+        top: 15rem;
+      }
+    }
   }
   &__copy {
     display: flex;
@@ -14,6 +50,26 @@
     padding-top: 3.1rem;
     border-top: 1px solid $light-grey;
     margin-top: 6.8rem;
+    @include responsive(tablet-portrait) {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
+  }
+  &__heading {
+    @include responsive(tablet-portrait) {
+      display: none;
+    }
+    &--responsive {
+      display: none;
+      @include responsive(tablet-portrait) {
+        display: block;
+        margin: 1.2rem 0 3.2rem;
+        padding-bottom: 3.2rem;
+        border-bottom: 1px solid $light-grey;
+        width: 100%;
+        text-align: left;
+      }
+    }
   }
 
   &__options {
@@ -32,6 +88,7 @@
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2rem;
+    color: $dark-grey;
   }
   &__reserved {
     position: relative;
@@ -39,8 +96,9 @@
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 2rem;
+    color: $dark-grey;
     &::before {
-      content: "aaa";
+      content: "";
       background: $light-grey;
       color: transparent;
       position: absolute;

@@ -103,7 +103,7 @@ function App() {
             item.current.classList.add(
               "animate__animated",
               "animate__fadeIn",
-              "animate__faster"
+              "animate__fast"
             );
           }
         }
@@ -147,6 +147,7 @@ function App() {
           </div>
         </div>
       </header>
+
       <section className="voice-section container">
         <h2 className="heading-2">
           Use your voice to make&nbsp;the world a better place.
@@ -228,14 +229,13 @@ function App() {
           </div>
         </div>
       </section>
+
       <section className="difference-section container">
-        <h2 className="heading-2">
-          Everything you need to&nbsp;make a difference
-        </h2>
+        <h2 className="heading-2">Everything you need to make a difference</h2>
         <p className="text">
           Join communities dedicated to causes you’re passionate about,
           crowdfund your world-changing treasury and vote for which projects get
-          the money they need to make an impact.
+          the money they need to maken&nbsp;an&nbsp;impact.
         </p>
         <div className="difference-section__pictures">
           <img
@@ -439,6 +439,7 @@ function App() {
           />
         </div>
       </section>
+
       <section className="join-section">
         <div className="join-section__banner flex">
           <h2 className="join-section__title heading-2 heading-2--white">
@@ -486,6 +487,7 @@ function App() {
           <img src={BgDots} alt="Dots" className="join-section__bg" />
         </div>
       </section>
+
       <Footer />
     </>
   );

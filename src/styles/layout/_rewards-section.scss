@@ -1,6 +1,7 @@
 .rewards-section {
   position: relative;
   margin-bottom: 19.2rem;
+
   &__header {
     @include center;
   }
@@ -11,6 +12,9 @@
     display: block;
     padding-top: 7.5rem;
     margin-bottom: 3.2rem;
+    @include responsive(tablet-portrait) {
+      margin-top: 4rem;
+    }
   }
   .text {
     @include center;
@@ -26,15 +30,29 @@
     position: absolute;
     top: -5rem;
     left: 50%;
-    width: 94.3rm;
+    width: 94.3rem;
     transform: translateX(-50%);
     z-index: -1;
+    @include responsive(tablet-portrait) {
+      width: 70rem;
+    }
   }
   &__cards {
     @include center;
     max-width: 118.4rem;
     justify-content: space-between;
     position: relative;
+    @include responsive(tablet-landscape) {
+      max-width: 115rem;
+      padding: 0rem 5rem;
+    }
+    @include responsive(tablet-portrait) {
+      flex-direction: column;
+      width: 100%;
+    }
+    > *:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
   }
   &__avatar {
     position: absolute;
@@ -43,32 +61,63 @@
     &--1 {
       top: 9rem;
       left: -8rem;
-      width: 40px;
+      width: 4rem;
+      @include responsive(tablet-portrait) {
+        right: 10rem;
+        top: 0rem;
+        left: auto;
+      }
     }
     &--2 {
       width: 3.2rem;
       left: 30rem;
       top: 6rem;
+      @include responsive(tablet-portrait) {
+        left: auto;
+        right: 30rem;
+        top: 25rem;
+      }
     }
     &--3 {
       width: 3.2rem;
       left: 35rem;
       bottom: 10rem;
+      @include responsive(tablet-portrait) {
+        right: 25rem;
+        left: auto;
+        bottom: 30rem;
+      }
     }
     &--4 {
       width: 3.2rem;
       bottom: 11rem;
       right: 36rem;
+      @include responsive(tablet-portrait) {
+        right: 7rem;
+        bottom: 45rem;
+      }
     }
     &--5 {
       width: 4rem;
       bottom: -2rem;
       right: 8rem;
+      @include responsive(tablet-portrait) {
+        right: 5rem;
+        bottom: 5rem;
+      }
     }
     &--6 {
-      width: 3.2rem;
+      width: 3.24rem;
       right: -10rem;
       top: 10rem;
+      @include responsive(tablet-landscape) {
+        right: 1rem;
+      }
+      @include responsive(tablet-portrait) {
+        right: 35rem;
+        top: auto;
+        bottom: 1rem;
+      }
     }
   }
   &__prop {
@@ -77,18 +126,41 @@
     &--1 {
       bottom: 12rem;
       left: 25rem;
+      @include responsive(tablet-landscape) {
+        left: 34rem;
+      }
     }
     &--2 {
       right: 28rem;
       top: 10rem;
+      @include responsive(tablet-landscape) {
+        right: 34rem;
+        width: 12rem;
+      }
+      @include responsive(tablet-portrait) {
+        display: none;
+      }
     }
     &--3 {
       top: 16rem;
       left: 28rem;
+      @include responsive(tablet-landscape) {
+        width: 15rem;
+        left: 30rem;
+      }
+      @include responsive(tablet-portrait) {
+        display: none;
+      }
     }
     &--4 {
       right: -6rem;
       bottom: 5.5rem;
+      @include responsive(tablet-landscape) {
+        right: 0rem;
+      }
+    }
+    @include responsive(tablet-portrait) {
+      visibility: hidden;
     }
   }
 }

@@ -1,21 +1,32 @@
 .difference-section {
   margin-bottom: 18.4rem;
+  width: 100%;
+  // overflow: hidden;
+  // overflow-y: visible;
   .heading-2 {
     display: block;
     text-align: center;
     max-width: 70rem;
     margin: 0px auto 2.4rem;
+    @include responsive(tablet-landscape) {
+      max-width: 59rem;
+    }
   }
   .text {
     max-width: 77rem;
     text-align: center;
     margin: 0px auto 6.4rem;
+    margin: 0px auto 2.4rem;
+    color: $dark-grey;
+    @include responsive(tablet-landscape) {
+      max-width: 70rem;
+    }
   }
   &__pictures {
     @include center;
     position: relative;
-    width: 98rem;
-    height: 68rem;
+    max-width: 70.4rem;
+    height: 48.7rem;
     background: linear-gradient(
       63deg,
       rgba($gradient-blue, 0.3) 5%,
@@ -32,8 +43,16 @@
       left: 50%;
       transform: translateX(-50%);
       height: 64rem;
-      width: 90rem;
+      max-width: 90rem;
       box-shadow: 0 10px 100px 2.5px rgba($dark-grey, 0.05);
+      @include responsive(tablet-landscape) {
+        max-width: 64rem;
+        max-height: 45.5rem;
+      }
+      @include responsive(tablet-portrait) {
+        max-width: 64rem;
+        max-height: 45.5rem;
+      }
     }
     &--2 {
       top: 12rem;
@@ -41,6 +60,18 @@
       height: 22.8rem;
       left: -10rem;
       box-shadow: 0 7rem 100px 2.5px rgba($dark-grey, 0.2);
+      @include responsive(tablet-landscape) {
+        left: -5rem;
+        top: 8rem;
+        width: 24.2rem;
+        height: 16.2rem;
+      }
+      @include responsive(tablet-portrait) {
+        width: 24.2rem;
+        height: 16.2rem;
+        right: -5rem;
+        top: 8rem;
+      }
     }
     &--3 {
       width: 23.4rem;
@@ -48,6 +79,18 @@
       top: 24.3rem;
       right: -13rem;
       box-shadow: 0 5rem 100px 2.5px rgba($dark-grey, 0.25);
+      @include responsive(tablet-landscape) {
+        width: 16.6rem;
+        height: 35.7rem;
+        right: -10rem;
+        top: 20rem;
+      }
+      @include responsive(tablet-portrait) {
+        width: 14rem;
+        height: 30.1rem;
+        right: -2%;
+        top: 20rem;
+      }
     }
     &--4 {
       width: 37.5rem;
@@ -55,6 +98,18 @@
       top: 10.2rem;
       right: -20rem;
       box-shadow: 0 5rem 100px 2.5px rgba($dark-grey, 0.25);
+      @include responsive(tablet-landscape) {
+        width: 26.6rem;
+        height: 7.9rem;
+        right: -15rem;
+        top: 5rem;
+      }
+      @include responsive(tablet-portrait) {
+        width: 23rem;
+        height: 6.9rem;
+        right: -4%;
+        top: 4rem;
+      }
     }
     &--5 {
       width: 37.4rem;
@@ -64,6 +119,17 @@
 
       z-index: -1;
       box-shadow: 0 5rem 100px 2.5px rgba($dark-grey, 0.2);
+      @include responsive(tablet-landscape) {
+        width: 25.6rem;
+        height: 11.2rem;
+        top: 25rem;
+      }
+      @include responsive(tablet-portrait) {
+        width: 20rem;
+        height: 8.4rem;
+        top: 30rem;
+        left: -5rem;
+      }
     }
     &--6 {
       width: 36.4rem;
@@ -72,6 +138,17 @@
       left: -10rem;
       transform: translateY(50%) translateX(-25%);
       box-shadow: 0 5rem 100px 2.5px rgba($dark-grey, 0.25);
+      box-shadow: 0 5rem 100px 2.5px rgba($dark-grey, 0.25);
+      @include responsive(tablet-landscape) {
+        width: 25.8rem;
+        height: 12.2rem;
+      }
+      @include responsive(tablet-portrait) {
+        width: 22rem;
+        height: 10.4rem;
+        left: -1rem;
+        bottom: -2rem;
+      }
     }
   }
 }

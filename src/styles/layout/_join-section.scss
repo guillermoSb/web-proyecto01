@@ -2,6 +2,13 @@
   @include center;
   max-width: 127.6rem;
   margin-bottom: 8rem;
+  @include responsive(tablet-landscape) {
+    max-width: 107rem;
+  }
+  @include responsive(tablet-portrait) {
+    max-width: 100%;
+    padding: 0rem 5rem;
+  }
   &__banner {
     // justify-content: space-between;
     align-items: center;
@@ -9,6 +16,16 @@
     padding: 8rem;
     background: linear-gradient(90deg, $primary 11%, $primary-dark-2 78%);
     gap: 10rem;
+    @include responsive(tablet-landscape) {
+      gap: 4.8rem;
+      padding: 6.4rem 5.6rem;
+    }
+    @include responsive(tablet-portrait) {
+      padding: 3.2rem 4.8rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3rem;
+    }
 
     position: relative;
     &::before {
@@ -31,6 +48,9 @@
   &__title {
     width: fit-content;
     width: 52rem;
+    @include responsive(tablet-landscape) {
+      font-size: 4rem;
+    }
   }
   &__text {
     color: $white-2;
@@ -43,6 +63,12 @@
     justify-content: space-between;
     margin-bottom: 3.2rem;
     gap: 3.2rem;
+    @include responsive(tablet-landscape) {
+      max-width: 39rem;
+    }
+    @include responsive(tablet-portrait) {
+      margin-bottom: 2rem;
+    }
   }
   &__link {
     display: flex;
@@ -54,12 +80,20 @@
     background-color: $dark-blue;
     transition: background-color 0.2s;
     z-index: 1;
+    @include responsive(tablet-landscape) {
+      max-width: 4rem;
+      max-height: 4rem;
+    }
     &:hover {
       cursor: pointer;
       background-color: $dark-blue-2;
     }
     svg {
       fill: $white-2;
+      @include responsive(tablet-landscape) {
+        max-width: 2rem;
+        max-height: 2rem;
+      }
     }
   }
   &__bg {

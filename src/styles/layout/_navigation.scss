@@ -5,9 +5,14 @@
   left: 0;
   display: flex;
   align-items: center;
-  padding: 2.4rem 4rem;
   z-index: 100;
   background-color: $white;
+
+  @include responsive(tablet-landscape) {
+    padding: 2rem 2rem;
+  }
+
+  padding: 2.4rem 4rem;
 
   &__logo {
     display: flex;
@@ -30,6 +35,9 @@
       left: 0px;
       position: absolute;
     }
+    @include responsive(tablet-portrait) {
+      display: none;
+    }
   }
   &__option {
     text-decoration: none;
@@ -46,5 +54,36 @@
     flex: 1;
     display: flex;
     justify-content: right;
+  }
+  &__menu {
+    position: relative;
+    padding: 0.5rem 2.4rem;
+    border: none;
+    background-color: transparent;
+    display: none;
+
+    @include responsive(tablet-portrait) {
+      display: block;
+    }
+    &::before {
+      content: "";
+      width: 2.5rem;
+      margin: 0px auto;
+      height: 2px;
+      display: block;
+      border-radius: 10px;
+      background-color: $dark-blue;
+      transform: translateY(5px);
+    }
+    &::after {
+      content: "";
+      width: 2.5rem;
+      margin: 0px auto;
+      height: 2px;
+      display: block;
+      border-radius: 10px;
+      background-color: $dark-blue;
+      transform: translateY(-5px);
+    }
   }
 }

@@ -1,10 +1,10 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanPlugin } = require('webpack');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanPlugin } = require("webpack");
 module.exports = {
-    entry: './src/index.js',
+    entry: "./src/index.js",
     output: {
-        filename: 'index_bundle-[hash].js'
+        filename: "index_bundle-[hash].js"
     },
     module: {
         rules: [
@@ -20,14 +20,14 @@ module.exports = {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader'  // Use babel with webpack
+                    loader: "babel-loader"  // Use babel with webpack
                 }
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif|woff|woff2|mp4|webp)$/i,
                 use: [
                     {
-                        loader: 'file-loader',
+                        loader: "file-loader",
                     },
                 ],
             },
@@ -36,8 +36,8 @@ module.exports = {
     plugins: [
         new CleanPlugin(),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src/index.html'),
-            favicon: path.join(__dirname, 'assets/earthfund.svg')
+            template: path.join(__dirname, "src/index.html"),
+            favicon: path.join(__dirname, "assets/earthfund.svg")
         }),
     ]
 }

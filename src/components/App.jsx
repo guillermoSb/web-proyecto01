@@ -99,8 +99,10 @@ function App() {
 
     const fadeInFast = () => {
       fadeInFastItems.forEach((item) => {
+        // Obtener la posición a la parte inferior de la pantalla
         const y = window.innerHeight - item.current.getBoundingClientRect().top;
         if (y > 0) {
+          // El elemento ya aparecio en la pantalla, animar
           if (!item.current.classList.contains("animate__fadeIn")) {
             item.current.classList.add(
               "animate__animated",

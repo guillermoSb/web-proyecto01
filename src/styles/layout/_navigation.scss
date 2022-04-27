@@ -65,11 +65,11 @@
   }
   &__menu {
     position: relative;
-    padding: 5rem;
     border: none;
     width: 0;
     height: 0;
     cursor: pointer;
+    visibility: hidden;
     display: none;
     @include responsive(tablet-portrait) {
       display: block;

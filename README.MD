@@ -41,7 +41,7 @@ Este es el [RESULTADO](http://ec2-54-175-28-151.compute-1.amazonaws.com:4000/)
 
 ### Cosas que aprendí
 
-Este proyecto me introdujo al tema de `Server Side Rendering`. También me permitió practicar el desarrollo de páginas web utilizando `Sass` y componentes de `React`. El efecto parallax lo conseguí siguiendo el siguiente [Tutorial](https://indithemes.com/how-to-create-a-simple-parallax-effect-using-vanilla-js/).
+Este proyecto me introdujo al tema de `Server Side Rendering`. También me permitió practicar el desarrollo de páginas web utilizando `Sass` y componentes de `React`. El efecto parallax lo conseguí siguiendo el siguiente [Tutorial](https://indithemes.com/how-to-create-a-simple-parallax-effect-using-vanilla-js/). Sin embargo lo modifiqué para también hacer animaciones fade in con imágenes y otros elementos.
 
 ## Autor
 

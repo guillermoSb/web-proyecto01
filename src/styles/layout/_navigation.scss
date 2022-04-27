@@ -65,14 +65,12 @@
   }
   &__menu {
     position: relative;
-    padding: 0.5rem 2.4rem;
+    padding: 5rem;
     border: none;
-    background-color: transparent;
-    display: none;
-    // opacity: 0;
     width: 0;
     height: 0;
-
+    cursor: pointer;
+    display: none;
     @include responsive(tablet-portrait) {
       display: block;
       margin: 0.5rem 2.4rem;
@@ -85,8 +83,10 @@
       display: block;
       border-radius: 10px;
       background-color: $dark-blue;
-      transform: translateY(5px);
+      transform: translateY(7px) translateX(-5px);
       transition: transform 0.2s;
+      opacity: 1;
+      visibility: visible;
     }
     &::after {
       content: "";
@@ -96,8 +96,9 @@
       display: block;
       border-radius: 10px;
       background-color: $dark-blue;
-      transform: translateY(-5px);
+      transform: translateY(-3px) translateX(-5px);
       transition: transform 0.2s;
+      visibility: visible;
     }
 
     &:checked {
@@ -111,7 +112,9 @@
 
     @include responsive(tablet-portrait) {
       &:checked ~ &-full {
+        visibility: visible;
         display: block;
+        z-index: 1000;
       }
     }
   }

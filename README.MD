@@ -45,5 +45,5 @@ Este proyecto me introdujo al tema de `Server Side Rendering`. También me permi
 
 ## Autor
 
-- Github Mentor - [guillermoSb](https://github.com/guillermoSb)
+- Github - [guillermoSb](https://github.com/guillermoSb)
 - LinkedIn - [guillermo-santosgt](https://www.linkedin.com/in/guillermo-santosgt/)

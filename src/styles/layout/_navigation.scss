@@ -63,6 +63,12 @@
     display: flex;
     justify-content: right;
   }
+  &__app {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    fill: $grey-2;
+  }
   &__menu {
     position: relative;
     border: none;

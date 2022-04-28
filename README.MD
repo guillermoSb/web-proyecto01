@@ -59,5 +59,5 @@ En este proyecto aprendí a organizar mi código de SASS de una mejor manera. Ad
 
 ## Autor
 
-- Github Mentor - [guillermoSb](https://github.com/guillermoSb)
+- Github - [guillermoSb](https://github.com/guillermoSb)
 - LinkedIn - [guillermo-santosgt](https://www.linkedin.com/in/guillermo-santosgt/)
